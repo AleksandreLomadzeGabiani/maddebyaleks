@@ -86,8 +86,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navBar?: Flex__<"header">;
-  logoWrap?: Flex__<"div">;
-  logo?: Flex__<typeof PlasmicImg__>;
   navmenu?: Flex__<"div">;
   link3?: Flex__<"a"> & Partial<LinkProps>;
   link2?: Flex__<"a"> & Partial<LinkProps>;
@@ -241,31 +239,17 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.navBar}
             className={classNames(projectcss.all, sty.navBar)}
           >
-            <div
-              data-plasmic-name={"logoWrap"}
-              data-plasmic-override={overrides.logoWrap}
-              className={classNames(projectcss.all, sty.logoWrap)}
-            >
-              <PlasmicImg__
-                data-plasmic-name={"logo"}
-                data-plasmic-override={overrides.logo}
-                alt={""}
-                className={classNames(sty.logo)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"220px"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/online_course_or_book/images/image8.png",
-                  fullWidth: 186,
-                  fullHeight: 80,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
+            <Button className={classNames("__wab_instance", sty.button__cqwpn)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__qjyay
+                )}
+              >
+                {"MadeByAleks"}
+              </div>
+            </Button>
             <div
               data-plasmic-name={"navmenu"}
               data-plasmic-override={overrides.navmenu}
@@ -324,7 +308,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.btnText
                   )}
                 >
-                  {"Start Learning"}
+                  {"Read More"}
                 </div>
               </Button>
             </div>
@@ -363,9 +347,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/online_course_or_book/images/image2.png",
-                        fullWidth: 1332,
-                        fullHeight: 2080,
+                        src: "/plasmic/online_course_or_book/images/_1474Ed3F84De4081Bfad8C1902637815Webp.webp",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
                         aspectRatio: undefined
                       }}
                     />
@@ -423,7 +407,19 @@ function PlasmicHomepage__RenderFunc(props: {
                         showEndIcon={true}
                         submitsForm={true}
                       >
-                        {"Access the course"}
+                        {"See Portfolio"}
+                      </Button>
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__cikPh
+                        )}
+                        color={"red"}
+                        shape={"rounded"}
+                        showEndIcon={true}
+                        submitsForm={true}
+                      >
+                        {"See Portfolio"}
                       </Button>
                     </div>
                   </div>
@@ -2019,8 +2015,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navBar",
-    "logoWrap",
-    "logo",
     "navmenu",
     "link3",
     "link2",
@@ -2099,8 +2093,6 @@ const PlasmicDescendants = {
   ],
   navBar: [
     "navBar",
-    "logoWrap",
-    "logo",
     "navmenu",
     "link3",
     "link2",
@@ -2108,8 +2100,6 @@ const PlasmicDescendants = {
     "button",
     "btnText"
   ],
-  logoWrap: ["logoWrap", "logo"],
-  logo: ["logo"],
   navmenu: ["navmenu", "link3", "link2"],
   link3: ["link3"],
   link2: ["link2"],
@@ -2323,8 +2313,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navBar: "header";
-  logoWrap: "div";
-  logo: typeof PlasmicImg__;
   navmenu: "div";
   link3: "a";
   link2: "a";
@@ -2463,8 +2451,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navBar: makeNodeComponent("navBar"),
-    logoWrap: makeNodeComponent("logoWrap"),
-    logo: makeNodeComponent("logo"),
     navmenu: makeNodeComponent("navmenu"),
     link3: makeNodeComponent("link3"),
     link2: makeNodeComponent("link2"),

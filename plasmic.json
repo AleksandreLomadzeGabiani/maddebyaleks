@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -249,6 +249,16 @@
           "id": "MR5dt5EJxpap",
           "name": "image 10",
           "filePath": "../public/plasmic/online_course_or_book/images/image10.png"
+        },
+        {
+          "id": "rEGzi1_t0_zI",
+          "name": "image 11",
+          "filePath": "../public/plasmic/online_course_or_book/images/image11.webp"
+        },
+        {
+          "id": "1_PcKMAQ_m06",
+          "name": "1474ed3f-84de-4081-bfad-8c1902637815.webp",
+          "filePath": "../public/plasmic/online_course_or_book/images/_1474Ed3F84De4081Bfad8C1902637815Webp.webp"
         }
       ],
       "indirect": false,

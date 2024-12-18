@@ -46,23 +46,24 @@
     padding: 6px 14px;
   }
 }
-.logoWrap {
-  display: flex;
+.button__cqwpn:global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__aIgCz {
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
   width: auto;
-  height: auto;
-  padding: 8px;
+  height: 1em;
 }
-.logo {
+.text__qjyay {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+.svg__eedGu {
   position: relative;
   object-fit: cover;
-  max-width: 220px;
-}
-.logo > picture > img {
-  object-fit: cover;
+  width: auto;
+  height: 1em;
 }
 .navmenu {
   display: flex;
@@ -413,6 +414,21 @@
   height: 1em;
 }
 .svg___9945I {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.button__cikPh:global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__tuvDo {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__sJ15U {
   position: relative;
   object-fit: cover;
   width: auto;

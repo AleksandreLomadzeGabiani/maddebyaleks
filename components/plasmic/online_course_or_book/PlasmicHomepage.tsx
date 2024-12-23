@@ -70,6 +70,8 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: J6TP2UqGTBvh/
 
 import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: bpaamlAu2rB6/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: 2nYlYHhsGp_d/icon
+import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: 3FjbOurk8g1R/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: bmJMlr2kxKFp/icon
 import _227601RightArrowIconSvgIcon from "./icons/PlasmicIcon___227601RightArrowIconSvg"; // plasmic-import: -ine5PlhH6xe/icon
 
 createPlasmicElementProxy;
@@ -89,7 +91,6 @@ export type PlasmicHomepage__OverridesType = {
   navmenu?: Flex__<"div">;
   link3?: Flex__<"a"> & Partial<LinkProps>;
   link2?: Flex__<"a"> & Partial<LinkProps>;
-  navBarButtonBlock?: Flex__<"div">;
   button?: Flex__<typeof Button>;
   btnText?: Flex__<"div">;
   section1?: Flex__<"section">;
@@ -99,6 +100,7 @@ export type PlasmicHomepage__OverridesType = {
   contentBlock?: Flex__<"div">;
   mainHeading?: Flex__<"h1">;
   peraBanner?: Flex__<"p">;
+  h6?: Flex__<"h6">;
   section2?: Flex__<"section">;
   subHeading?: Flex__<"h2">;
   logoContainer?: Flex__<"div">;
@@ -147,7 +149,6 @@ export type PlasmicHomepage__OverridesType = {
   avtarContent?: Flex__<"div">;
   avatarImage?: Flex__<"div">;
   section9?: Flex__<"section">;
-  svg?: Flex__<"svg">;
   footer?: Flex__<"footer">;
   footerLogo?: Flex__<"div">;
   logo2?: Flex__<typeof PlasmicImg__>;
@@ -268,7 +269,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 href={`/`}
                 platform={"nextjs"}
               >
-                {"Pricing"}
+                {"Learn more"}
               </PlasmicLink__>
               <PlasmicLink__
                 data-plasmic-name={"link2"}
@@ -283,34 +284,68 @@ function PlasmicHomepage__RenderFunc(props: {
                 href={"#"}
                 platform={"nextjs"}
               >
-                {"Story"}
+                {"Resume"}
               </PlasmicLink__>
             </div>
-            <div
-              data-plasmic-name={"navBarButtonBlock"}
-              data-plasmic-override={overrides.navBarButtonBlock}
-              className={classNames(projectcss.all, sty.navBarButtonBlock)}
-            >
-              <Button
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
-                className={classNames("__wab_instance", sty.button)}
-                color={"red"}
-                shape={"rounded"}
-                submitsForm={true}
+            <div className={classNames(projectcss.all, sty.freeBox__b08W)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ud6Fz)}
               >
-                <div
-                  data-plasmic-name={"btnText"}
-                  data-plasmic-override={overrides.btnText}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.btnText
-                  )}
+                <Icon28Icon
+                  className={classNames(projectcss.all, sty.svg__ohGmM)}
+                  role={"img"}
+                />
+
+                <Icon2Icon
+                  className={classNames(projectcss.all, sty.svg__bHem5)}
+                  role={"img"}
+                />
+
+                <Button
+                  data-plasmic-name={"button"}
+                  data-plasmic-override={overrides.button}
+                  className={classNames("__wab_instance", sty.button)}
+                  color={"red"}
+                  shape={"rounded"}
+                  submitsForm={true}
                 >
-                  {"Read More"}
-                </div>
-              </Button>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__uyMx5)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__f5ZN)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"20px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/online_course_or_book/images/obsidianIconPng.png",
+                        fullWidth: 1720,
+                        fullHeight: 2555,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <div
+                      data-plasmic-name={"btnText"}
+                      data-plasmic-override={overrides.btnText}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.btnText
+                      )}
+                    >
+                      {"Read More"}
+                    </div>
+                  </div>
+                </Button>
+              </Stack__>
             </div>
           </header>
           <section
@@ -371,7 +406,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.mainHeading
                       )}
                     >
-                      {"The Ultimate Guide to High-Performance Landing Pages"}
+                      {"MadeByAleks"}
                     </h1>
                     <p
                       data-plasmic-name={"peraBanner"}
@@ -389,9 +424,70 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__jIfYl
                         )}
                       >
-                        {
-                          "Your go-to guide for both B2B and B2C digital marketing pages.\n\nWe will share with you the hard-won tips and tricks we've gained from developing over 75 high-converting landing pages clients across multiple industries. Everything from ad image and copy, to page design and conversion strategies are shared here in broad strokes for you to take home and deploy."
-                        }
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__zg3Yi
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h6
+                                    data-plasmic-name={"h6"}
+                                    data-plasmic-override={overrides.h6}
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h6,
+                                      projectcss.__wab_text,
+                                      sty.h6
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#FFFFFF" }}
+                                      >
+                                        {
+                                          "Hi, my name is Aleks. I assume you have found this page through LinkedIn or my resume. I keep my complete and polished project writeups as well as further information about me in an obsidian publish vault."
+                                        }
+                                      </span>
+                                      <React.Fragment>{"\n"}</React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#FFFFFF" }}
+                                      >
+                                        {""}
+                                      </span>
+                                      <React.Fragment>{"\n"}</React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#FFFFFF" }}
+                                      >
+                                        {
+                                          "For a 1-page idea of what I do, you can download my resume pdf c:"
+                                        }
+                                      </span>
+                                    </React.Fragment>
+                                  </h6>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
                       </div>
                     </p>
                     <div
@@ -1686,9 +1782,7 @@ function PlasmicHomepage__RenderFunc(props: {
               color={"white"}
               endIcon={
                 <_227601RightArrowIconSvgIcon
-                  data-plasmic-name={"svg"}
-                  data-plasmic-override={overrides.svg}
-                  className={classNames(projectcss.all, sty.svg)}
+                  className={classNames(projectcss.all, sty.svg__w6Z3G)}
                   role={"img"}
                 />
               }
@@ -2018,7 +2112,6 @@ const PlasmicDescendants = {
     "navmenu",
     "link3",
     "link2",
-    "navBarButtonBlock",
     "button",
     "btnText",
     "section1",
@@ -2028,6 +2121,7 @@ const PlasmicDescendants = {
     "contentBlock",
     "mainHeading",
     "peraBanner",
+    "h6",
     "section2",
     "subHeading",
     "logoContainer",
@@ -2076,7 +2170,6 @@ const PlasmicDescendants = {
     "avtarContent",
     "avatarImage",
     "section9",
-    "svg",
     "footer",
     "footerLogo",
     "logo2",
@@ -2091,19 +2184,10 @@ const PlasmicDescendants = {
     "youtube",
     "vimeo"
   ],
-  navBar: [
-    "navBar",
-    "navmenu",
-    "link3",
-    "link2",
-    "navBarButtonBlock",
-    "button",
-    "btnText"
-  ],
+  navBar: ["navBar", "navmenu", "link3", "link2", "button", "btnText"],
   navmenu: ["navmenu", "link3", "link2"],
   link3: ["link3"],
   link2: ["link2"],
-  navBarButtonBlock: ["navBarButtonBlock", "button", "btnText"],
   button: ["button", "btnText"],
   btnText: ["btnText"],
   section1: [
@@ -2113,7 +2197,8 @@ const PlasmicDescendants = {
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "h6"
   ],
   container: [
     "container",
@@ -2121,19 +2206,22 @@ const PlasmicDescendants = {
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "h6"
   ],
   flexBox: [
     "flexBox",
     "bannerImage",
     "contentBlock",
     "mainHeading",
-    "peraBanner"
+    "peraBanner",
+    "h6"
   ],
   bannerImage: ["bannerImage"],
-  contentBlock: ["contentBlock", "mainHeading", "peraBanner"],
+  contentBlock: ["contentBlock", "mainHeading", "peraBanner", "h6"],
   mainHeading: ["mainHeading"],
-  peraBanner: ["peraBanner"],
+  peraBanner: ["peraBanner", "h6"],
+  h6: ["h6"],
   section2: ["section2", "subHeading", "logoContainer"],
   subHeading: ["subHeading"],
   logoContainer: ["logoContainer"],
@@ -2283,8 +2371,7 @@ const PlasmicDescendants = {
   section8: ["section8", "avtarContent", "avatarImage"],
   avtarContent: ["avtarContent"],
   avatarImage: ["avatarImage"],
-  section9: ["section9", "svg"],
-  svg: ["svg"],
+  section9: ["section9"],
   footer: [
     "footer",
     "footerLogo",
@@ -2316,7 +2403,6 @@ type NodeDefaultElementType = {
   navmenu: "div";
   link3: "a";
   link2: "a";
-  navBarButtonBlock: "div";
   button: typeof Button;
   btnText: "div";
   section1: "section";
@@ -2326,6 +2412,7 @@ type NodeDefaultElementType = {
   contentBlock: "div";
   mainHeading: "h1";
   peraBanner: "p";
+  h6: "h6";
   section2: "section";
   subHeading: "h2";
   logoContainer: "div";
@@ -2374,7 +2461,6 @@ type NodeDefaultElementType = {
   avtarContent: "div";
   avatarImage: "div";
   section9: "section";
-  svg: "svg";
   footer: "footer";
   footerLogo: "div";
   logo2: typeof PlasmicImg__;
@@ -2454,7 +2540,6 @@ export const PlasmicHomepage = Object.assign(
     navmenu: makeNodeComponent("navmenu"),
     link3: makeNodeComponent("link3"),
     link2: makeNodeComponent("link2"),
-    navBarButtonBlock: makeNodeComponent("navBarButtonBlock"),
     button: makeNodeComponent("button"),
     btnText: makeNodeComponent("btnText"),
     section1: makeNodeComponent("section1"),
@@ -2464,6 +2549,7 @@ export const PlasmicHomepage = Object.assign(
     contentBlock: makeNodeComponent("contentBlock"),
     mainHeading: makeNodeComponent("mainHeading"),
     peraBanner: makeNodeComponent("peraBanner"),
+    h6: makeNodeComponent("h6"),
     section2: makeNodeComponent("section2"),
     subHeading: makeNodeComponent("subHeading"),
     logoContainer: makeNodeComponent("logoContainer"),
@@ -2512,7 +2598,6 @@ export const PlasmicHomepage = Object.assign(
     avtarContent: makeNodeComponent("avtarContent"),
     avatarImage: makeNodeComponent("avatarImage"),
     section9: makeNodeComponent("section9"),
-    svg: makeNodeComponent("svg"),
     footer: makeNodeComponent("footer"),
     footerLogo: makeNodeComponent("footerLogo"),
     logo2: makeNodeComponent("logo2"),

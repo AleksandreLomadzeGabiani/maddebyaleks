@@ -17,6 +17,8 @@
   --plasmic-token-unnamed-style-token-3: var(--token-woZkxzshKrLo);
   --token-OzSThkc5t8o1: var(--token-67XpP4YM_SBa);
   --plasmic-token-unnamed-style-token-4: var(--token-OzSThkc5t8o1);
+  --token-TmesrMYLa4Nx: 20px;
+  --plasmic-token-icon-size: var(--token-TmesrMYLa4Nx);
 }
 
 .plasmic_tokens {

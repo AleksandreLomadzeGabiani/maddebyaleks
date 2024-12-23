@@ -71,6 +71,16 @@
       }
     },
     {
+      "name": "icon-size",
+      "type": "spacing",
+      "value": "20px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "b1utx8z56xvEqoRYjndhny",
+        "id": "TmesrMYLa4Nx"
+      }
+    },
+    {
       "name": "menu color",
       "type": "color",
       "value": "#3291FF",
